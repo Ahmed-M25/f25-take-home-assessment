@@ -39,7 +39,7 @@ def fetch_weather_data(location: str) -> Dict[str, Any]:
         params = {
             "access_key": WEATHERSTACK_API_KEY,
             "query": location,
-            "units": "m"  # Metric units
+            "units": "m"
         }
         
         response = requests.get(WEATHERSTACK_BASE_URL, params=params, timeout=10)
